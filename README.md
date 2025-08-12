@@ -1,4 +1,15 @@
 # Personal Portfolio Website
+COMPANY: CODE TECH IT SOLUTIONS
+
+*NAME*: SHANU RAJPUT
+
+*INTERN ID*: CT04DH2707
+
+*DOMAIN*: FRONT END DEVELOPMENT
+
+*DURATION*: 4 WEEKS
+
+*MENTOR*: NEELA SANTOSH
 
 A responsive single-page portfolio website built with HTML, CSS, and JavaScript for showcasing a developer's projects and skills.
 
@@ -107,3 +118,4 @@ Feel free to customize this portfolio template for your own use. The code is wel
 ---
 
 **Created for CODTECH Internship Task 3 - Personal Portfolio Webpage**
+
