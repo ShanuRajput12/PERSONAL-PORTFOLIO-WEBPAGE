@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech - E-Learning Platform</title>
+    <link rel="stylesheet" href="e-learning.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <h2>EduTech</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#dashboard" class="nav-link active" data-page="dashboard">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#courses" class="nav-link" data-page="courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#progress" class="nav-link" data-page="progress">Progress</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#profile" class="nav-link" data-page="profile">Profile</a>
+                </li>
+            </ul>
+            <div class="nav-user">
+                <div class="user-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="user-info">
+                    <span class="user-name">John Doe</span>
+                    <span class="user-role">Student</span>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Dashboard Page -->
+        <div id="dashboard" class="page active">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Welcome back, John!</h1>
+                    <p>Continue your learning journey</p>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>12</h3>
+                            <p>Courses Enrolled</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>45</h3>
+                            <p>Hours Completed</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>8</h3>
+                            <p>Certificates Earned</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>85%</h3>
+                            <p>Average Score</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue Learning -->
+                <section class="section">
+                    <h2 class="section-title">Continue Learning</h2>
+                    <div class="course-grid">
+                        <div class="course-card" data-course="web-development">
+                            <div class="course-image">
+                                <i class="fas fa-code"></i>
+                                <div class="progress-overlay">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 75%"></div>
+                                    </div>
+                                    <span class="progress-text">75% Complete</span>
+                                </div>
+                            </div>
+                            <div class="course-content">
+                                <h3>Web Development Fundamentals</h3>
+                                <p>Learn HTML, CSS, and JavaScript basics</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 8 hours left</span>
+                                    <span><i class="fas fa-play"></i> 12 lessons</span>
+                                </div>
+                                <button class="btn btn-primary">Continue</button>
+                            </div>
+                        </div>
+
+                        <div class="course-card" data-course="python">
+                            <div class="course-image">
+                                <i class="fab fa-python"></i>
+                                <div class="progress-overlay">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 45%"></div>
+                                    </div>
+                                    <span class="progress-text">45% Complete</span>
+                                </div>
+                            </div>
+                            <div class="course-content">
+                                <h3>Python Programming</h3>
+                                <p>Master Python programming language</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 12 hours left</span>
+                                    <span><i class="fas fa-play"></i> 18 lessons</span>
+                                </div>
+                                <button class="btn btn-primary">Continue</button>
+                            </div>
+                        </div>
+
+                        <div class="course-card" data-course="react">
+                            <div class="course-image">
+                                <i class="fab fa-react"></i>
+                                <div class="progress-overlay">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 20%"></div>
+                                    </div>
+                                    <span class="progress-text">20% Complete</span>
+                                </div>
+                            </div>
+                            <div class="course-content">
+                                <h3>React.js Mastery</h3>
+                                <p>Build modern web applications</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 15 hours left</span>
+                                    <span><i class="fas fa-play"></i> 24 lessons</span>
+                                </div>
+                                <button class="btn btn-primary">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recent Activity -->
+                <section class="section">
+                    <h2 class="section-title">Recent Activity</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Completed Lesson 5: CSS Flexbox</h4>
+                                <p>Web Development Fundamentals</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Passed Quiz: Python Basics</h4>
+                                <p>Python Programming</p>
+                                <span class="activity-time">1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Earned Certificate: HTML Mastery</h4>
+                                <p>Web Development Fundamentals</p>
+                                <span class="activity-time">3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Courses Page -->
+        <div id="courses" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1>All Courses</h1>
+                    <div class="search-filter">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search courses...">
+                        </div>
+                        <select class="filter-select">
+                            <option value="">All Categories</option>
+                            <option value="web">Web Development</option>
+                            <option value="programming">Programming</option>
+                            <option value="design">Design</option>
+                            <option value="data">Data Science</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="courses-grid">
+                    <div class="course-card" data-course="web-development">
+                        <div class="course-image">
+                            <i class="fas fa-code"></i>
+                            <div class="course-badge">Popular</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Web Development Fundamentals</h3>
+                            <p>Learn HTML, CSS, and JavaScript to build modern websites</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 20 hours</span>
+                                <span><i class="fas fa-user"></i> 1.2k students</span>
+                                <span><i class="fas fa-star"></i> 4.8</span>
+                            </div>
+                            <div class="course-price">
+                                <span class="price">$49</span>
+                                <button class="btn btn-primary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-course="python">
+                        <div class="course-image">
+                            <i class="fab fa-python"></i>
+                            <div class="course-badge">New</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Python Programming</h3>
+                            <p>Master Python programming from basics to advanced concepts</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 25 hours</span>
+                                <span><i class="fas fa-user"></i> 856 students</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="course-price">
+                                <span class="price">$59</span>
+                                <button class="btn btn-primary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-course="react">
+                        <div class="course-image">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="course-content">
+                            <h3>React.js Mastery</h3>
+                            <p>Build modern web applications with React.js</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 30 hours</span>
+                                <span><i class="fas fa-user"></i> 2.1k students</span>
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                            <div class="course-price">
+                                <span class="price">$69</span>
+                                <button class="btn btn-primary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-course="ui-design">
+                        <div class="course-image">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="course-content">
+                            <h3>UI/UX Design</h3>
+                            <p>Create beautiful and functional user interfaces</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 18 hours</span>
+                                <span><i class="fas fa-user"></i> 945 students</span>
+                                <span><i class="fas fa-star"></i> 4.6</span>
+                            </div>
+                            <div class="course-price">
+                                <span class="price">$45</span>
+                                <button class="btn btn-primary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-course="data-science">
+                        <div class="course-image">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="course-content">
+                            <h3>Data Science Fundamentals</h3>
+                            <p>Learn data analysis and machine learning basics</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 35 hours</span>
+                                <span><i class="fas fa-user"></i> 1.5k students</span>
+                                <span><i class="fas fa-star"></i> 4.8</span>
+                            </div>
+                            <div class="course-price">
+                                <span class="price">$79</span>
+                                <button class="btn btn-primary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-course="nodejs">
+                        <div class="course-image">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="course-content">
+                            <h3>Node.js Backend Development</h3>
+                            <p>Build scalable server-side applications</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 28 hours</span>
+                                <span><i class="fas fa-user"></i> 1.8k students</span>
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                            <div class="course-price">
+                                <span class="price">$65</span>
+                                <button class="btn btn-primary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Page -->
+        <div id="progress" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Learning Progress</h1>
+                    <p>Track your learning journey</p>
+                </div>
+
+                <!-- Overall Progress -->
+                <section class="section">
+                    <h2 class="section-title">Overall Progress</h2>
+                    <div class="progress-overview">
+                        <div class="progress-card">
+                            <div class="progress-circle">
+                                <svg viewBox="0 0 36 36">
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="75, 100"/>
+                                </svg>
+                                <div class="progress-text">
+                                    <h3>75%</h3>
+                                    <p>Complete</p>
+                                </div>
+                            </div>
+                            <h4>Overall Completion</h4>
+                        </div>
+                        <div class="progress-stats">
+                            <div class="progress-stat">
+                                <h3>12</h3>
+                                <p>Courses Enrolled</p>
+                            </div>
+                            <div class="progress-stat">
+                                <h3>8</h3>
+                                <p>Completed</p>
+                            </div>
+                            <div class="progress-stat">
+                                <h3>45</h3>
+                                <p>Hours Spent</p>
+                            </div>
+                            <div class="progress-stat">
+                                <h3>85%</h3>
+                                <p>Average Score</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Course Progress -->
+                <section class="section">
+                    <h2 class="section-title">Course Progress</h2>
+                    <div class="course-progress-list">
+                        <div class="course-progress-item">
+                            <div class="course-info">
+                                <h3>Web Development Fundamentals</h3>
+                                <p>HTML, CSS, JavaScript</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <div class="progress-details">
+                                <span class="progress-percentage">75%</span>
+                                <span class="progress-lessons">9/12 lessons</span>
+                            </div>
+                        </div>
+
+                        <div class="course-progress-item">
+                            <div class="course-info">
+                                <h3>Python Programming</h3>
+                                <p>Python Basics to Advanced</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                            <div class="progress-details">
+                                <span class="progress-percentage">45%</span>
+                                <span class="progress-lessons">8/18 lessons</span>
+                            </div>
+                        </div>
+
+                        <div class="course-progress-item">
+                            <div class="course-info">
+                                <h3>React.js Mastery</h3>
+                                <p>Modern Web Development</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 20%"></div>
+                            </div>
+                            <div class="progress-details">
+                                <span class="progress-percentage">20%</span>
+                                <span class="progress-lessons">5/24 lessons</span>
+                            </div>
+                        </div>
+
+                        <div class="course-progress-item">
+                            <div class="course-info">
+                                <h3>UI/UX Design</h3>
+                                <p>Design Principles</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                            <div class="progress-details">
+                                <span class="progress-percentage">90%</span>
+                                <span class="progress-lessons">16/18 lessons</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Profile Page -->
+        <div id="profile" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Profile</h1>
+                    <p>Manage your account settings</p>
+                </div>
+
+                <div class="profile-content">
+                    <div class="profile-section">
+                        <h2>Personal Information</h2>
+                        <div class="profile-form">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" value="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" value="john.doe@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="tel" value="+1 (555) 123-4567">
+                            </div>
+                            <div class="form-group">
+                                <label>Location</label>
+                                <input type="text" value="New York, USA">
+                            </div>
+                            <button class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </div>
+
+                    <div class="profile-section">
+                        <h2>Learning Preferences</h2>
+                        <div class="preferences-grid">
+                            <div class="preference-item">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Email Notifications
+                                </label>
+                            </div>
+                            <div class="preference-item">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Course Reminders
+                                </label>
+                            </div>
+                            <div class="preference-item">
+                                <label>
+                                    <input type="checkbox">
+                                    Weekly Progress Reports
+                                </label>
+                            </div>
+                            <div class="preference-item">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    Achievement Notifications
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Course Detail Modal -->
+    <div id="courseModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Web Development Fundamentals</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="course-detail-content">
+                    <div class="course-video">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play"></i>
+                            <p>Video Player</p>
+                        </div>
+                    </div>
+                    <div class="course-lessons">
+                        <h3>Course Content</h3>
+                        <div class="lesson-list">
+                            <div class="lesson-item completed">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Introduction to HTML</span>
+                                <span class="lesson-duration">15 min</span>
+                            </div>
+                            <div class="lesson-item completed">
+                                <i class="fas fa-check-circle"></i>
+                                <span>HTML Structure</span>
+                                <span class="lesson-duration">20 min</span>
+                            </div>
+                            <div class="lesson-item active">
+                                <i class="fas fa-play-circle"></i>
+                                <span>CSS Basics</span>
+                                <span class="lesson-duration">25 min</span>
+                            </div>
+                            <div class="lesson-item">
+                                <i class="fas fa-circle"></i>
+                                <span>CSS Layouts</span>
+                                <span class="lesson-duration">30 min</span>
+                            </div>
+                            <div class="lesson-item">
+                                <i class="fas fa-circle"></i>
+                                <span>JavaScript Introduction</span>
+                                <span class="lesson-duration">35 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="e-learning.js"></script>
+</body>
+</html>
