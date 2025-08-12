@@ -111,11 +111,10 @@ portfolio/
 
 This project is created for educational purposes as part of the CODTECH internship program.
 
-## 🤝 Contributing
+*OUTPUT*:
 
-Feel free to customize this portfolio template for your own use. The code is well-commented and organized for easy modification.
+<img width="1889" height="963" alt="Image" src="https://github.com/user-attachments/assets/bcc1caa9-f2b6-46bc-81f5-05d0aa4750c2" />
+<img width="1878" height="958" alt="Image" src="https://github.com/user-attachments/assets/b181fc53-2fa5-4be1-8ee7-f62869495ab0" />
+<img width="1888" height="960" alt="Image" src="https://github.com/user-attachments/assets/18426efe-dc50-4f94-9371-1ccaab19d0b6" />
 
----
-
-**Created for CODTECH Internship Task 3 - Personal Portfolio Webpage**
 
